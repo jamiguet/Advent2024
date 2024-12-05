@@ -3,9 +3,8 @@ def list_to_map(vect):
     result = dict()
     for v in vect:
         if v not in result:
-            result[v] = 1
-        else:
-            result[v] += 1
+            result[v] = 0
+        result[v] += 1
 
     return result
 
